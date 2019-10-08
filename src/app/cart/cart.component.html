@@ -1,0 +1,21 @@
+<div class="container">
+    <table class="table table-striped table-hover">
+        <thead class="thead thead-dark">
+            <th>Title</th>
+            <th>Author Name</th>
+            <th>Price</th>
+            <th>Remove book from cart</th>
+        </thead>
+        <tbody *ngFor="let item of cartt, let i = index">
+            <tr>
+                <td>{{item.title}}</td>
+                <td>{{item.auna}}</td>
+                <td>{{item.price}}</td>
+                <td><a class="btn btn-danger" (click)= "remv(i)">Remove</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <div><strong>Total Amount: {{cost}}</strong></div>
+    <div *ngIf="cartt.length>0"><a class="btn btn-primary" routerLink="checkout">Checkout</a></div>
+</div>
+

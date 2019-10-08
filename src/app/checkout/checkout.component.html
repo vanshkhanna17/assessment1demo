@@ -1,0 +1,27 @@
+<div class="container">
+    <form (ngSubmit)="sub()">
+        <div class="row">
+            <fieldset class="col-md-6">
+                <div class="form-group">
+                    <label class="form-col-label">Name: {{name}}</label>
+                    <input class="form-control" name="name" type="text" [(ngModel)]="name"
+                        placeholder="Your name comes here..." required>
+                    <p class="small">{{msgn}}</p>
+                </div>
+                <div class="form-group">
+                    <label class="form-col-label">Contact Number: {{num}}</label>
+                    <input class="form-control" name="num" type="number" [(ngModel)]="num"
+                        placeholder="Your phone number comes here..." required>
+                    <p class="small">{{msgnu}}</p>
+                </div>
+                <div class="form-group">
+                    <label class="form-col-label">Address</label>
+                    <textarea class="form-control" name="txt" type="text" placeholder="Your address comes here..." [(ngModel)]="txt"
+                        required></textarea>
+                    <p class="small">{{msgt}}</p>
+                </div>
+                <button type="submit" class="btn btn-primary">Place Order</button>
+            </fieldset>
+        </div>
+    </form>
+</div>

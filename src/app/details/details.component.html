@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="abc">
+        <div>
+            <h1><strong>Book: {{book.title}}</strong></h1>
+        </div>
+        <div>
+            <h2>By: {{book.auna}}</h2>
+        </div>
+        <div>
+            <h3>Price: Rupees {{book.price}}</h3>
+        </div>
+        <p>{{book.des}}</p>
+        <a class="btn btn-primary" routerLink="cart" (click)="add()">Add to Cart</a>
+    </div>
+</div>

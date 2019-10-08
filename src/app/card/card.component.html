@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="row">
+        <div *ngFor="let book of books, let i = index">
+            <div *ngIf="i < 3">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/images/{{book.img}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{book.title}}</h5>
+                            <p class="card-text">By: {{book.auna}}<br>Price: {{book.price}}</p>
+                            <a href="#" class="btn btn-primary" routerLink="details/{{i}}">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div *ngFor="let book of books, let i = index">
+            <div *ngIf="i >= 3 && i < 6">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/images/{{book.img}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{book.title}}</h5>
+                            <p class="card-text">By: {{book.auna}}<br>Price: {{book.price}}</p>
+                            <a href="#" class="btn btn-primary" routerLink="details/{{i}}">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div *ngFor="let book of books, let i = index">
+            <div *ngIf="i >= 6 && i < 9 ">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/images/{{book.img}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{book.title}}</h5>
+                            <p class="card-text">By: {{book.auna}}<br>Price: {{book.price}}</p>
+                            <a href="#" class="btn btn-primary" routerLink="details/{{i}}">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div *ngFor="let book of books, let i = index">
+            <div *ngIf="i >= 9">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/images/{{book.img}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{book.title}}</h5>
+                            <p class="card-text">By: {{book.auna}}<br>Price: {{book.price}}</p>
+                            <a href="#" class="btn btn-primary" routerLink="details/{{i}}">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
